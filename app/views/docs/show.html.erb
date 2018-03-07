@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @doc.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @doc.text %>
+</p>
+
+<%= link_to 'Back', docs_path %>
+<%= link_to 'Edit', edit_doc_path(doc) %>
