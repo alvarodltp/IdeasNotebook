@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: white;
+  background-color: lightgray;
 }
 
 html{
@@ -24,4 +24,52 @@ html{
 .dropdown-menu{
   display: left;
   font-family: "Brother 1816";
+}
+
+
+#docs-container{
+  max-width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title{
+  font-weight: bold;
+  color: black;
+  font-size: 2.0em;
+  letter-spacing: 1px;
+}
+
+.date{
+  color: black;
+  font-weight: lighter;
+  font-size: .100rem;
+  text-align: center;
+}
+
+.text {
+  color: black;
+  font-weight: bold;
+  font-size: .100rem;
+  text-align: left;
+
+  }
+
+#doc-container{
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#create-new-button{
+  margin-top: 20px;
+}
+
+.create-new-text {
+  font-size: medium;
+  font-weight: bold;
+  color: black;
 }
