@@ -1,12 +1,9 @@
-<p>
-  <strong>Title:</strong>
-  <%= @doc.title %>
-</p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @doc.text %>
-</p>
+  <h1><%= @doc.title %></h1>
 
-<%= link_to 'Back', docs_path %>
-<%= link_to 'Edit', edit_doc_path(doc) %>
+  <p><%= @doc.text %></p>
+
+
+<%= link_to 'All Docs', docs_path %>
+<%= link_to 'Edit', edit_doc_path(@doc)%>
+<%= link_to 'Trash It', doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %>
