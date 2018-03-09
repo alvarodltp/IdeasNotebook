@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/alvarodltp/AlvaroDeLaTorreViewTool
+  revision: edd556f0e0a1d4c89e19b641785e8bbd59874575
+  specs:
+    AlvaroDeLaTorre_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -201,6 +207,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  AlvaroDeLaTorre_view_tool!
   bootstrap (~> 4.0)
   byebug
   capybara (~> 2.13)
