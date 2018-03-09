@@ -2,6 +2,8 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "font-awesome";
+
 .main-header-image{
   position: relative;
   height: 300px;
@@ -24,4 +26,13 @@
   margin-left: -300px;
   margin-top: -50px;
 
+}
+
+.btn-secondary{
+  background-color: transparent;
+}
+
+
+.card{
+  text-align: center;
 }
