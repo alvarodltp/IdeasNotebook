@@ -1,3 +1,27 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-header-image{
+  position: relative;
+  height: 300px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#get-started-button{
+
+}
+
+.title{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -50px;
+
+}
