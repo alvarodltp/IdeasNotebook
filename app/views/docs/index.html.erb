@@ -1,26 +1,25 @@
-<div class="container" id="docs-container" >
-  <h1>All Your Ideas, In One Place</h1>
-    <div class="btn btn-primary btn-block" id="create-new-button">
-      <%= link_to 'Create New', new_doc_path, class: 'create-new-text' %>
-    </div>
-  <div class="card-title" ></div>
+<div class="container" id="docs-container">
+  <div class="btn btn-primary btn-block" id="create-new-button">
+    <%= link_to 'Create New', new_doc_path, class: 'create-new-text' %>
+  </div>
 
-
-        <% unless @docs.blank? %>
+    <div class="card-body" id="ideas-card">
+      <% unless @docs.blank? %>
           <% @docs.each do |doc| %>
 
-          <div class="container" id="doc-container">
-            <p class="title"><%= doc.title %></p>
-            <p class="date"><%= time_ago_in_words(doc.created_at) %> ago </p>
-            <p class="text"><%= sanitize(doc.text[0,270]) %>...</p>
-            <%= link_to 'Show', doc_path(doc) %>
-            <%= link_to 'Edit', edit_doc_path(doc) %>
-            <%= link_to 'Delete', doc_path(doc),
+              <div class="container" id="doc-container">
+                <p class="card-title"><%= doc.title %></p>
+                <p class="date"><%= time_ago_in_words(doc.created_at) %> ago </p>
+                <p class="text"><%= sanitize(doc.text[0, 270]) %>...</p>
+                <div class="buttons">
+                <%= link_to 'Show', doc_path(doc), class: 'btn btn-primary btn-sm' %>
+                <%= link_to 'Edit', edit_doc_path(doc), class:'btn btn-success btn-sm' %>
+                <%= link_to 'Delete', doc_path(doc),
                             method: :delete,
-                            data: { confirm: 'Are you sure?' } %>
-          </div>
+                            data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %>
+                </div>
+              </div>
           <% end %>
       <% end %>
-
     </div>
 </div>

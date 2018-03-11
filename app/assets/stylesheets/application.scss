@@ -5,17 +5,22 @@
 @import "welcome";
 @import "font-awesome";
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+  padding: 0px;
+}
+
 .navbar-default{
   background-color: black;
 }
 
 body{
   background-color: lightgray;
-}
-
-html{
-  width:100%;
-  height:100%;
 }
 
 .navbar-brand{
@@ -28,6 +33,9 @@ html{
   font-family: "Brother 1816";
 }
 
+#ideas-card{
+  margin-top: -20px;
+}
 
 #docs-container{
   max-width: 700px;
@@ -36,7 +44,7 @@ html{
   text-align: center;
 }
 
-.title{
+.card-title{
   font-weight: bold;
   color: black;
   font-size: 2.0em;
@@ -67,7 +75,9 @@ html{
 }
 
 #create-new-button{
+  margin: 0 auto;
   margin-top: 20px;
+  width: 200px;
 }
 
 .create-new-text {
@@ -77,6 +87,20 @@ html{
 }
 
 .mastfoot {
-  color: black;
+  background-color: black;
   text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  overflow:hidden;
+}
+
+.inner{
+  color: white;
+}
+
+.buttons {
+  margin-bottom: 10px,
 }
