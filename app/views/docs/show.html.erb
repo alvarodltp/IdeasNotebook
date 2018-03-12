@@ -1,9 +1,11 @@
-
+<div class="container" id="show-idea">
   <h1><%= @doc.title %></h1>
 
   <p><%= @doc.text %></p>
 
 
-<%= link_to 'All Docs', docs_path %>
-<%= link_to 'Edit', edit_doc_path(@doc)%>
-<%= link_to 'Trash It', doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %>
+  <%= link_to 'All Ideas', docs_path %>
+  <%= link_to 'Edit', edit_doc_path(@doc)%>
+  <%= link_to 'Trash It', doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" } %>
+
+</div>

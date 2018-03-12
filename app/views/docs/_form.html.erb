@@ -1,31 +1,31 @@
 
-<%= form_with model: @doc, local: true do |form| %>
+  <%= form_with model: @doc, local: true do |form| %>
 
-    <% if @doc.errors.any? %>
-        <div id="error_explanation">
-          <h2>
-            <%= pluralize(@doc.errors.count, "error") %> prohibited
-            this article from being saved:
-          </h2>
-          <ul>
-            <% @doc.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+      <% if @doc.errors.any? %>
+          <div id="error_explanation">
+            <h2>
+              <%= pluralize(@doc.errors.count, "error") %> prohibited
+              this article from being saved:
+            </h2>
+            <ul>
+              <% @doc.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
 
-    <p>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
-    </p>
+      <% end %>
 
-    <p>
-      <%= form.label :text %><br>
-      <%= form.text_area :text %>
-    </p>
+      <div class="form-group">
+        <%= form.label :title %><br>
+        <%= form.text_field :title, class:'form-control' %>
+      </div>
 
-    <p>
-      <%= form.submit %>
-    </p>
-<% end %>
+      <div class="form-group">
+        <%= form.label :text %><br>
+        <%= form.text_area :text, class:'form-control', rows:8 %>
+      </div>
+
+      <div class="form-group">
+        <%= form.submit 'Save Idea', class:'btn btn-primary' %>
+      </div>
+  <% end %>
