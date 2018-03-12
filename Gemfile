@@ -58,3 +58,4 @@ gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'AlvaroDeLaTorre_view_tool', git: 'https://github.com/alvarodltp/AlvaroDeLaTorreViewTool'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
