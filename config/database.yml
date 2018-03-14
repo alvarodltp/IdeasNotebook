@@ -44,11 +44,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
   <<: *default
   database: IdeasNotebook_production
   username: IdeasNotebook
-  password: <%= ENV['IDEASNOTEBOOK_DATABASE_PASSWORD'] %>
+  password: <%= ENV['password'] %>
+  url: <%= ENV['mysql2://ec4l2q6i0kdtd5a8:mmmn2az83ov99ix5@fugfonv8odxxolj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hiwfip8qtrbjb6a1'] %>
+
